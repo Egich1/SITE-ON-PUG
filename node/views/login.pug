@@ -1,0 +1,65 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Amazon 
+    style.
+      form{
+        width: 600px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: #FB5400;
+      }
+      input {
+        font-size: 15px;
+        width: 400px;
+        height: 60px;
+        border-radius: 4px;
+        padding: 5px;
+        border: 2px solid #FB5400;
+        border-radius: 32px;
+        font-size: 20px;
+      }
+      .checkbox{
+        width: 20px;
+        cursor: pointer;
+        height: 20px;
+      }
+      label{
+        width: 400px;
+        font-size: 20px;
+      }
+      .button{
+        font-size: 25px;
+        margin: 10px;
+        cursor: pointer;
+        background: #FB5400;
+        border: 2px solid #FB5400;
+        border-radius: 32px;
+        color: white;
+      }
+      a {
+        font-size: 25px;
+        text-decoration: none;
+        color: #FB5400;
+      }
+  body
+    form(style='margin: 200px auto; display: flex; flex-flow: column; padding: 10px; border: 1px solid; align-items: center;')
+
+      h1(style='font-size: 40px;') Вход
+
+      label(style='padding: 10px;' for='')
+        input(type='text' name='login' placeholder='Логин' id='')
+
+      label(style='padding: 10px;' for='')
+        input(type='password' name='password' placeholder='Пароль' id='' required='')
+
+      label(style='padding: 10px;' for='')
+        input.checkbox(type='checkbox' name='' id='') 
+        | Запомнить пароль
+      input.button(type='submit' value='Войти')
+
+      a(href='/index') Забыли пароль?
+      a(href='/register') Нет аккаунта?
